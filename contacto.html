@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/jsmath-cmbx10" rel="stylesheet">
+    <title>Global Text</title>
+  </head>
+  <body>
+    <div id="top-bar">
+      <div id="logo">GLOBAL TEXT</div>
+      <nav>
+        <ul>
+            <li class="texto-subrayado"><a href="index.html">INICIO</a></li>
+            <li class="texto-subrayado"><a href="productos.html">PRODUCTOS</a></li>
+            <li class="logo-central"><img src="images/imagen_gt_1_2_white.png" alt="GT Logo"></li>
+            <li class="texto-subrayado"><a href="servicios.html">SERVICIOS</a></li>
+            <li class="texto-subrayado"><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+      </nav>
+      <button><a href="contacto.html" class="cotizacion-principal">SOLICITA TU COTIZACIÓN</a></button>
+    </div>
+
+    
+    
+    
+    <center>
+      <div id="contactForm-BODY">
+      <div id="contact-form-container">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="subject">Asunto:</label>
+            <select id="subject" name="subject">
+                <option value="">Seleccione un asunto</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="errorMessages"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+    <table width="50%" style="margin: 50px;">
+      <tr>
+          <td align="center">
+            <div id="Image-Contacto">
+                <img src="images/imagen_cor_1 5.png">
+            </div>
+          </td>
+          <td>
+            <div id="Link-Contacto">
+              <a href="mailto:globaltext.publicidad@gmail.com" target="_blank">globaltext.publicidad@gmail.com</a>
+            </div>
+          </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <div id="Image-Contacto">
+              <img src="images/imagen_what_1 5.png">
+          </div>
+        </td>
+        <td>
+          <div id="Link-Contacto">
+            <a href="https://api.whatsapp.com/send/?phone=983532410&text&type=phone_number&app_absent=0" target="_blank">983532410</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <div id="Image-Contacto">
+              <img src="images/imagen_f_1 5.png">
+          </div>
+        </td>
+        <td>
+          <div id="Link-Contacto">
+            <a href="https://www.facebook.com/global.textil20/" target="_blank"><pre>GLOBAL TEXT</pre></a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </center>
+  </body>
+</html>

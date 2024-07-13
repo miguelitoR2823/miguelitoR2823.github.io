@@ -1,0 +1,45 @@
+#converter-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#converter-container h2 {
+    margin-bottom: 20px;
+}
+
+#convertForm {
+    margin-bottom: 20px;
+}
+
+#numberInput {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 1.2em;
+    color: #333;
+}

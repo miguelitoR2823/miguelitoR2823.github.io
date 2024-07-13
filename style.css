@@ -1,0 +1,628 @@
+/*Body en General*/
+body{
+    margin: 0;
+}
+
+/*Boton principal de cotizacion Barra superior*/
+.cotizacion-principal{
+    text-decoration: none;
+}
+
+
+/*Texto e Imágenes principales*/
+#principal-image{
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/Rectangle_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Microsoft JhengHei", "MingLiU", "Apple LiSung" !important;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+#principal-text{
+    margin-top: 120px;
+}
+
+.morado{
+    color: #9B4193;
+}
+
+.verde{
+    color: #3CBBB1;
+}
+
+.naranja{
+    color: #FA9200;
+}
+
+#principal-image img{
+    max-width: 30%;
+    padding-top: 2%;
+    margin-left: 10%;
+}
+
+/*Menú superior*/
+#top-bar {
+    height: 100px;
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+#top-bar #logo {
+    font-size: 40px;
+}
+
+#top-bar nav {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+#top-bar nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#top-bar nav ul li {
+    margin: 0 10px;
+}
+
+#top-bar nav ul li a, #top-bar nav ul li img {
+    color: white;
+    text-decoration: none;
+  }
+
+/*Efecto de Subrayado en el Menú superior*/
+.texto-subrayado{
+    position: relative;  
+    display: inline-block;
+} 
+
+.texto-subrayado::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.texto-subrayado:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#top-bar button {
+    font-family: kodchasan, sans-serif; font-style: normal; font-weight: 600;
+    background-color: #FA9200;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#top-bar button:hover {
+    background-color: #ae6500;
+}
+
+.logo-central {
+    text-align: center;
+  }
+
+.logo-central img {
+    height: 75px;
+    width: auto;
+}
+
+/*Texto de la parte del Slider*/
+#Texto-Slider{
+    margin-top: 70px;
+}
+
+#Texto-Slider h2{
+    font-family: kodchasan, sans-serif; font-style: normal; font-weight: 600;
+    font-size: 50px;
+    line-height: 30px;
+    color: #FA9200;
+}
+
+/*Slider*/
+
+
+.container{
+    position: relative;
+}
+
+.container .wrapper{
+    width: 30vw;
+    height: 30vw;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+}
+
+.container #slider-img-1{
+    background-image: url(./images/Polos_slider_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.container #slider-img-2{
+    background-image: url(./images/Polos_slider_5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.container #slider-img-3{
+    background-image: url(./images/Polos_slider_4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.container #slider-img-4{
+    background-image: url(./images/Polos_slider_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.container .button-holder .button{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder{
+    position: absolute;
+    left: 47%;
+    bottom: 0%;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 10px 3px #ae6500;
+}
+
+/*Boton para ver productos*/
+#VerProductos button{
+    background-color: #3CBBB1;
+    font-family: kodchasan, sans-serif; font-style: normal; font-weight: 600;
+    font-size: 20px;
+    color: #ae6500;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+/*Texto Secundario*/
+#Texto-Secundario {
+    font-family: "KoHo", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 30px;
+    color: #FA9200;
+    margin-top: 100px;
+}
+
+/*Cards*/
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    background-image: linear-gradient(to bottom,#fa7d00,#c452ba);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 5px;
+}
+
+.card-content h3{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*PAGINA DE PRODUCTOS*/
+#Title-Productos{
+    display: flex;
+    justify-content: center;
+    font-family: 'jsMath-cmbx10', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    background-image: url(images/title_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Sub-Title-Productos{
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+#Content-Productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    width: 800px;
+    font-size: 25px;
+}
+
+#Image-Productos{
+    width: 95%;
+    height: auto;
+    margin-top: 40px;
+    border: 5px solid #FA9200;
+}
+
+#VerProductos-Productos button{
+    background-color: #FA9200;
+    font-family: kodchasan, sans-serif; font-style: normal; font-weight: 600;
+    font-size: 20px;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/*PAGINA DE SERVICIOS*/
+#Title-Servicios{
+    display: flex;
+    justify-content: center;
+    font-family: 'jsMath-cmbx10', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    background-image: url(images/title_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Sub-Title-Servicios{
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+#Content-Servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    width: 800px;
+    font-size: 25px;
+}
+
+#Image-Servicios{
+    width: 85%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 5px solid #FA9200;
+}
+
+#VerProductos-Servicios button{
+    background-color: #3CBBB1;
+    font-family: kodchasan, sans-serif; font-style: normal; font-weight: 600;
+    font-size: 20px;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/*PAGINA DE CONTACTO*/
+#Title-Contacto{
+    display: flex;
+    justify-content: center;
+    font-family: 'jsMath-cmbx10', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    background-image: url(images/title_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#table-contacto{
+    margin-top: 2%;
+}
+
+#Link-Contacto a{
+    display: flex;
+    justify-content: left;
+    font-family: 'jsMath-cmbx10', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#Image-Contacto{
+    width: 60%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#Image-Contacto img{
+    width: auto;
+    height: 150px;
+    
+}
+
+
+/*Sirve para el precio de imágenes de los productos*/
+.container-2{
+    padding: 0 10 px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.card-2{
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(-45deg,#FA9200,#9B4193);
+    text-align: center;
+}
+
+.card-2-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card-2:nth-child(2){
+    background: linear-gradient(-45deg,#3CBBB1,#9B4193);
+
+}
+
+/*LOGIN REGISTER*/
+#login-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#login-body .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-title {
+    margin-bottom: 20px;
+}
+
+#login-body .form-group {
+    margin-bottom: 15px;
+}
+
+#login-body label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-body input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    color: red;
+}
+
+/*FORMULARIO DE CONTACTO:*/
+
+#contactForm-BODY{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 30px;
+    padding-bottom: 250px;
+    height: auto;
+    margin: 0;
+}
+
+#contact-form-container {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    border: 2px solid #007BFF;
+}
+
+#contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+#contact-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contact-form-container input,
+#contact-form-container select,
+#contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#contact-form-container input:focus,
+#contact-form-container select:focus,
+#contact-form-container textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#contact-form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form-container button:hover {
+    background-color: #0056b3;
+}
+
+#errorMessages {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*PRODUCTOS FILTROS*/
+/* Estilos para los botones de filtrar */
+button#filterButton {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button#filterButton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los botones de ordenar */
+button#sortAscButton,
+button#sortDescButton {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button#sortAscButton:hover,
+button#sortDescButton:hover {
+    background-color: #218838;
+}
+
+/* Estilos para los botones de buscar */
+button#searchButton {
+    padding: 8px 16px;
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#searchButton:hover {
+    background-color: #e0a800;
+}
